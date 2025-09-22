@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL Shortener</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; }
+        form { display: flex; gap: 10px; }
+        input[type="url"] { flex: 1; padding: 10px; }
+        button { padding: 10px 20px; background: #007bff; color: white; border: none; }
+    </style>
+</head>
+<body>
+    <h1>URL Shortener</h1>
+    <form action="/shorten" method="post">
+        <input type="url" name="url" placeholder="Enter long URL" required>
+        <button type="submit">Shorten</button>
+    </form>
+</body>
+</html>
